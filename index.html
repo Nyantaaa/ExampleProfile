@@ -1,377 +1,229 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Alpine.js CDN (untuk interaktivitas x-data, @click, dll) -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <!-- Glide.js CDN (untuk carousel slider) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
+    <link rel="stylesheet" href="assets/app-D_XBwGH-.css" />
+    <link rel="stylesheet" href="assets/app-CLbQKm89.css" />
 
-  <body class="bg-white text-black overflow-x-hidden new-font">
+</head>
+
+<body class="bg-white text-black overflow-x-hidden new-font">
     <!-- Hero Section -->
-    <section
-      class="relative bg-cover bg-center bg-no-repeat min-h-screen"
-      style="background-image: url('img/Ruang Packaging.jpg')"
-    >
-      <!-- Overlay blur + semi-transparan -->
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-lime-100 to-emerald-100/70 backdrop-blur-xs"
-      ></div>
+    <section class="relative bg-cover bg-center bg-no-repeat min-h-screen"
+        style="background-image: url('img/Ruang Packaging.jpg');">
+        <!-- Overlay blur + semi-transparan -->
+        <div class="absolute inset-0 bg-gradient-to-br from-lime-100 to-emerald-100/70 backdrop-blur-xs"></div>
 
-      <!-- Konten utama -->
-      <div
-        class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center text-black"
-      >
-        <!-- Logo dan Headline dalam satu baris -->
-        <div class="flex items-center gap-4 md:gap-6">
-          <!-- Logo -->
-          <img
-            src="img/Logo BJK.png"
-            class="w-16 h-16 md:w-34 md:h-34 object-contain"
-            alt="Logo Icon"
-          />
+        <!-- Konten utama -->
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center text-black">
+            <!-- Logo dan Headline dalam satu baris -->
+            <div class="flex items-center gap-4 md:gap-6">
+                <!-- Logo -->
+                <img src="img/Logo BJK.png" class="w-16 h-16 md:w-34 md:h-34 object-contain" alt="Logo Icon" />
 
-          <!-- Headline -->
-          <h1
-            class="text-3xl text-start md:text-6xl font-black leading-tight drop-shadow-lg"
-          >
-            PT. BAHAGIA<br />JAYA KHARISMA
-          </h1>
+                <!-- Headline -->
+                <h1 class="text-3xl text-start md:text-6xl font-black leading-tight drop-shadow-lg">
+                    PT. BAHAGIA<br />JAYA KHARISMA
+                </h1>
+            </div>
+
+            <!-- Tombol -->
+            <div class="mt-10 space-x-6">
+                <a href="#about">
+                    <button
+                        class="text-lg font-semibold px-6 py-3 rounded-full cursor-pointer bg-gradient-to-r from-lime-400 to-emerald-400 hover:from-cyan-400 hover:to-blue-400 text-white shadow-xl transition duration-300 ease-in-out hover:scale-105 inline-flex items-center gap-2">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </a>
+            </div>
         </div>
-
-        <!-- Tombol -->
-        <div class="mt-10 space-x-6">
-          <a href="#about">
-            <button
-              class="text-lg font-semibold px-6 py-3 rounded-full cursor-pointer bg-gradient-to-r from-lime-400 to-emerald-400 hover:from-cyan-400 hover:to-blue-400 text-white shadow-xl transition duration-300 ease-in-out hover:scale-105 inline-flex items-center gap-2"
-            >
-              Learn More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </a>
-        </div>
-      </div>
     </section>
 
-    <section
-      id="about"
-      class="text-center justify-center pt-12 px-8 bg-gradient-to-b from-emerald-100 via-white to-cyan-100"
-    >
-      <!-- Judul About -->
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto text-lg text-justify indent-8">
-        <span class="font-bold">PT. Bahagia Jaya Kharisma</span> adalah sebuah
-        usaha yang bergerak di bidang industri mainan edukatif anak, khususnya
-        produk clay dengan nama <span class="font-bold">NewBall</span>.
-        Didirikan pada tanggal 1 Maret 2025 oleh Bapak Ahui, perusahaan ini
-        hadir dengan semangat untuk menghadirkan produk mainan yang tidak hanya
-        menyenangkan, tetapi juga mendukung perkembangan kreativitas dan motorik
-        anak-anak.
-      </p>
+    <section id='about'
+        class="text-center justify-center pt-12 px-8 bg-gradient-to-b from-emerald-100 via-white to-cyan-100">
 
-      <!-- Visi & Misi sejajar -->
-      <div
-        class="max-w-6xl mx-auto mt-12 flex flex-col md:flex-row gap-10 text-center"
-      >
-        <!-- Visi -->
-        <div class="flex-1">
-          <h2
-            class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-center"
-          >
-            Visi Kami
-          </h2>
-          <p class="text-gray-700 text-lg pb-4">
-            Menjadi pelopor dalam industri kreatif yang menginspirasi dan
-            memberdayakan masyarakat melalui karya seni berkualitas tinggi.
-          </p>
-          <!-- Card kiri -->
-          <div
-            class="bg-gray-100 rounded-lg shadow-md flex-1 h-64 md:h-124 overflow-hidden"
-          >
-            <img
-              src="img/Ruang Packaging.jpg"
-              alt="Team Member 1"
-              class="w-full h-full object-cover"
-            />
-          </div>
+        <!-- Judul About -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg text-justify indent-8">
+            <span class="font-bold">PT. Bahagia Jaya Kharisma</span> adalah sebuah usaha yang bergerak di bidang industri mainan edukatif anak, khususnya
+            produk clay dengan nama <span class="font-bold">NewBall</span>. Didirikan pada tanggal 1 Maret 2025 oleh Bapak Ahui, perusahaan ini hadir dengan
+            semangat untuk menghadirkan produk mainan yang tidak hanya menyenangkan, tetapi juga mendukung perkembangan
+            kreativitas dan motorik anak-anak.
+        </p>
+
+        <!-- Visi & Misi sejajar -->
+        <div class="max-w-6xl mx-auto mt-12 flex flex-col md:flex-row gap-10 text-center">
+            <!-- Visi -->
+            <div class="flex-1">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-center">Visi Kami</h2>
+                <p class="text-gray-700 text-lg pb-4">
+                    Menjadi pelopor dalam industri kreatif yang menginspirasi dan memberdayakan masyarakat melalui karya
+                    seni berkualitas tinggi.
+                </p>
+                <!-- Card kiri -->
+                <div class="bg-gray-100 rounded-lg shadow-md flex-1 h-64 md:h-124 overflow-hidden">
+                    <img src="img/Ruang Packaging.jpg" alt="Team Member 1" class="w-full h-full object-cover" />
+                </div>
+            </div>
+
+            <!-- Misi -->
+            <div class="flex-1">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-center">Misi Kami</h2>
+                <p class="text-gray-700 text-lg pb-4">
+                    Menghasilkan produk seni inovatif, melatih talenta lokal, dan menciptakan dampak sosial melalui
+                    praktik berkelanjutan dan inklusif.
+                </p>
+                <!-- Card kanan -->
+                <div class="bg-gray-100 rounded-lg shadow-md flex-1 h-64 md:h-124 overflow-hidden">
+                    <img src="img/Ruang Packaging_2.jpg" alt="Team Member 2" class="w-full h-full object-cover" />
+                </div>
+            </div>
         </div>
-
-        <!-- Misi -->
-        <div class="flex-1">
-          <h2
-            class="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-center"
-          >
-            Misi Kami
-          </h2>
-          <p class="text-gray-700 text-lg pb-4">
-            Menghasilkan produk seni inovatif, melatih talenta lokal, dan
-            menciptakan dampak sosial melalui praktik berkelanjutan dan
-            inklusif.
-          </p>
-          <!-- Card kanan -->
-          <div
-            class="bg-gray-100 rounded-lg shadow-md flex-1 h-64 md:h-124 overflow-hidden"
-          >
-            <img
-              src="img/Ruang Packaging_2.jpg"
-              alt="Team Member 2"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Cards -->
-      <!-- <div class="max-w-4xl mx-auto pt-10 pb-12 flex flex-col md:flex-row gap-8 justify-center"></div> -->
     </section>
+
 
     <!-- Product Section -->
-    <section
-      id="product"
-      class="text-center flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-cyan-100 via-white to-blue-100"
-    >
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Our Products</h2>
-      <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg mb-10">
-        Mainan edukatif Clay produk lokal dari NewBall sudah ber-SNI dan
-        memiliki banyak manfaat.
-      </p>
+    <section id='product'
+        class="text-center flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-cyan-100 via-white to-blue-100">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6">Our Products</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg mb-10">
+            Mainan edukatif Clay produk lokal dari NewBall sudah ber-SNI dan memiliki banyak manfaat.
+        </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Carousel Wrapper -->
-        <div
-          class="relative glide col-span-1 md:col-span-3 bg-white rounded-xl shadow-md overflow-visible hover:shadow-lg transition-all duration-300"
-        >
-          <!-- Track -->
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <img
-                  src="img/Produk 7 Gram.png"
-                  alt="Image 1"
-                  class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl"
-                />
-              </li>
-              <li class="glide__slide">
-                <img
-                  src="img/Produk 9 Gram.png"
-                  alt="Image 2"
-                  class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl"
-                />
-              </li>
-              <li class="glide__slide">
-                <img
-                  src="img/Produk 30 Gram.png"
-                  alt="Image 3"
-                  class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl"
-                />
-              </li>
-            </ul>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Carousel Wrapper -->
+            <div
+                class="relative glide col-span-1 md:col-span-3 bg-white rounded-xl shadow-md overflow-visible hover:shadow-lg transition-all duration-300">
 
-          <!-- Controls -->
-          <div class="glide__arrows" data-glide-el="controls">
-            <button
-              class="glide__arrow glide__arrow--left absolute top-1/2 left-2 transform -translate-y-1/2 p-2 sm:p-3 bg-white rounded-full shadow-lg z-50 cursor-pointer"
-              data-glide-dir="<"
-              aria-label="Previous slide"
-            >
-              <img
-                src="https://img.icons8.com/ios-filled/24/000000/chevron-left.png"
-                alt="Prev"
-              />
-            </button>
-            <button
-              class="glide__arrow glide__arrow--right absolute top-1/2 right-2 transform -translate-y-1/2 p-2 sm:p-3 bg-white rounded-full shadow-lg z-50 cursor-pointer"
-              data-glide-dir=">"
-              aria-label="Next slide"
-            >
-              <img
-                src="https://img.icons8.com/ios-filled/24/000000/chevron-right.png"
-                alt="Next"
-              />
-            </button>
-          </div>
+                <!-- Track -->
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/Produk 7 Gram.png" alt="Clay 7 Gram"
+                                class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/Produk 9 Gram.png" alt="Clay 9 Gram"
+                                class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl" />
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/Produk 30 Gram.png" alt="Clay 30 Gram"
+                                class="w-full h-56 sm:h-64 md:h-135 object-cover rounded-xl" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Controls -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button
+                        class="glide__arrow glide__arrow--left absolute top-1/2 left-2 transform -translate-y-1/2 p-2 sm:p-3 bg-white rounded-full shadow-lg z-50 cursor-pointer"
+                        data-glide-dir="<" aria-label="Previous slide">
+                        <img src="https://img.icons8.com/ios-filled/24/000000/chevron-left.png" alt="Prev" />
+                    </button>
+                    <button
+                        class="glide__arrow glide__arrow--right absolute top-1/2 right-2 transform -translate-y-1/2 p-2 sm:p-3 bg-white rounded-full shadow-lg z-50 cursor-pointer"
+                        data-glide-dir=">" aria-label="Next slide">
+                        <img src="https://img.icons8.com/ios-filled/24/000000/chevron-right.png" alt="Next" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+                <img src="https://img.icons8.com/ios/100/visible.png" class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4" />
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Dexterity</h3>
+                <p class="text-gray-500 text-sm sm:text-base">Meningkatkan motorik halus dan menstimulasi sensorik</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+                <img src="https://img.icons8.com/ios/100/brain.png" class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4" />
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Intelligence</h3>
+                <p class="text-gray-500 text-sm sm:text-base">Mengenal konsep warna serta mengembangkan imajinasi dan
+                    kreativitas</p>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+                <img src="https://img.icons8.com/ios/100/meditation-guru.png"
+                    class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4" />
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Wisdom</h3>
+                <p class="text-gray-500 text-sm sm:text-base">Meningkatkan konsentrasi dan fokus</p>
+            </div>
         </div>
-
-        <!-- Product Card 1 -->
-        <div
-          class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300"
-        >
-          <img
-            src="https://img.icons8.com/ios/100/visible.png"
-            class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4"
-          />
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Dexterity</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Meningkatkan motorik halus dan menstimulasi sensorik
-          </p>
-        </div>
-
-        <!-- Product Card 2 -->
-        <div
-          class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300"
-        >
-          <img
-            src="https://img.icons8.com/ios/100/brain.png"
-            class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4"
-          />
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Intelligence</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Mengenal konsep warna serta mengembangkan imajinasi dan kreativitas
-          </p>
-        </div>
-
-        <!-- Product Card 3 -->
-        <div
-          class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300"
-        >
-          <img
-            src="https://img.icons8.com/ios/100/meditation-guru.png"
-            class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4"
-          />
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Wisdom</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Meningkatkan konsentrasi dan fokus
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section
-      id="contact"
-      class="pt-12 pb-2 px-6 bg-gradient-to-b from-blue-100 to-indigo-100 text-center"
-    >
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-      <p class="text-gray-600 mb-6">
-        Hubungi kami untuk pemesanan dan informasi lebih lanjut.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
-        <!-- Address Card -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center justify-center space-x-2 mb-2">
-            <img
-              src="https://img.icons8.com/ios-filled/50/address--v1.png"
-              class="w-5 h-5"
-              alt="Address Icon"
-            />
-            <h3 class="text-xl font-semibold text-gray-800">Address</h3>
-          </div>
-          <p class="text-gray-600">
-            Jl. Raya Otonom Cikupa No.55, Taglasari, Kec. Cikupa, Kabupaten
-            Tangerang, Banten 15710
-          </p>
-        </div>
 
-        <!-- Phone Card -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center justify-center space-x-2 mb-2">
-            <img
-              src="https://img.icons8.com/color/48/whatsapp--v1.png"
-              class="w-5 h-5"
-              alt="Phone Icon"
-            />
-            <h3 class="text-xl font-semibold text-gray-800">Phone</h3>
-          </div>
-          <p class="text-gray-600">+62 812-3456-7890</p>
+    <!-- Contact Section -->
+    <section id="contact" class="pt-12 pb-2 px-6 bg-gradient-to-b from-blue-100 to-indigo-100 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+        <p class="text-gray-600 mb-6">Hubungi kami untuk pemesanan dan informasi lebih lanjut.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
+            <!-- Address Card -->
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <img src="https://img.icons8.com/ios-filled/50/address--v1.png" class="w-5 h-5"
+                        alt="Address Icon" />
+                    <h3 class="text-xl font-semibold text-gray-800">Address</h3>
+                </div>
+                <p class="text-gray-600 text-justify">Jl. Raya Otonom Cikupa No.55, Taglasari, Kec. Cikupa, Kabupaten Tangerang,
+                    Banten 15710</p>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" class="w-5 h-5" alt="Phone Icon" />
+                    <h3 class="text-xl font-semibold text-gray-800">Phone</h3>
+                </div>
+                <p class="text-gray-600">+62 812-3456-7890</p>
+            </div>
+            <!-- Email Card -->
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <img src="https://img.icons8.com/ios-filled/50/new-post.png" class="w-5 h-5" alt="Email Icon" />
+                    <h3 class="text-xl font-semibold text-gray-800">Email</h3>
+                </div>
+                <a href="mailto:bahagiajayakharisma@google.com" class="text-sky-600 px-10 hover:underline block break-words">bahagiajayakharisma@google.com</a>
+            </div>
         </div>
-        <!-- Email Card -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center justify-center space-x-2 mb-2">
-            <img
-              src="https://img.icons8.com/ios-filled/50/new-post.png"
-              class="w-5 h-5"
-              alt="Email Icon"
-            />
-            <h3 class="text-xl font-semibold text-gray-800">Email</h3>
-          </div>
-          <a
-            href="mailto:bahagiajayakharisma@google.com"
-            class="text-sky-600 hover:underline"
-            >bahagiajayakharisma@google.com</a
-          >
-        </div>
-      </div>
     </section>
 
     <!-- Footer Section -->
-    <footer
-      class="pt-10 text-center pb-10 px-6 bg-gradient-to-b from-indigo-100 to-purple-100"
-    >
-      <div class="max-w-6xl mx-auto border-t border-gray-400 pt-10">
-        <h3 class="text-xl font-bold mb-4 text-gray-800">NewBall</h3>
-        <p class="text-gray-500 mb-6 max-w-md mx-auto">
-          Edukatif, kreatif, dan menyenangkan — produk clay lokal terbaik untuk
-          anak-anak Indonesia.
-        </p>
-        <div class="flex justify-center space-x-6 mb-6">
-          <!-- Instagram -->
-          <a
-            href="https://www.instagram.com/newballofficialstore/"
-            class="text-gray-400 hover:text-lime-500 transition"
-            aria-label="Instagram"
-          >
-            <img
-              src="https://img.icons8.com/color/48/instagram-new--v1.png"
-              class="w-5 h-5"
-            />
-          </a>
-          <!-- Shopee -->
-          <a
-            href="https://shopee.co.id/newballstore"
-            class="text-gray-400 hover:text-lime-500 transition"
-            aria-label="Shopee"
-          >
-            <img
-              src="https://img.icons8.com/color/48/shopee.png"
-              class="w-5 h-5"
-            />
-          </a>
-          <!-- Tokopedia -->
-          <a
-            href="#"
-            class="text-gray-400 hover:text-lime-500 transition"
-            aria-label="Tokopedia"
-          >
-            <img src="img/Tokopedia.png" class="w-5 h-5" alt="tokopedia" />
-          </a>
+    <footer class="pt-10 text-center pb-10 px-6 bg-gradient-to-b from-indigo-100 to-purple-100">
+        <div class="max-w-6xl mx-auto border-t border-gray-400 pt-10">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">NewBall</h3>
+            <p class="text-gray-500 mb-6 max-w-md mx-auto">
+                Edukatif, kreatif, dan menyenangkan — produk clay lokal terbaik untuk anak-anak Indonesia.
+            </p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/newballofficialstore/" class="text-gray-400 hover:text-lime-500 transition" aria-label="Instagram">
+                    <img src="https://img.icons8.com/color/48/instagram-new--v1.png" class="w-5 h-5" />
+                </a>
+                <!-- Shopee -->
+                <a href="https://shopee.co.id/newballstore" class="text-gray-400 hover:text-lime-500 transition" aria-label="Shopee">
+                    <img src="https://img.icons8.com/color/48/shopee.png" class="w-5 h-5" />
+                </a>
+                <!-- Tokopedia -->
+                <a href="#" class="text-gray-400 hover:text-lime-500 transition" aria-label="Tokopedia">
+                    <img src="img/Tokopedia.png" class="w-5 h-5" alt="tokopedia" />
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">
+                &copy; 2025 PT. BAHAGIA JAYA KHARISMA. All rights reserved.
+            </p>
         </div>
-        <p class="text-sm text-gray-400">
-          &copy; 2025 PT. BAHAGIA JAYA KHARISMA. All rights reserved.
-        </p>
-      </div>
     </footer>
-    <script>
-      // Inisialisasi Glide (jika kamu ingin langsung jalankan slider-nya)
-      document.addEventListener("DOMContentLoaded", function () {
-        new Glide(".glide").mount();
-      });
-    </script>
-  </body>
+    <script src="assets/app--J8wMw64.js"></script>
+</body>
+
 </html>
